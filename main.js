@@ -216,3 +216,19 @@ var matrix = [
 console.log("Matrix: ", matrix);
 // Accessing elements in a 2D array
 console.log("Element: ", matrix[0][1]); // 2
+
+// Functions - block of code that performs a specific task
+// Syntax: function functionName(parameters) { code to be executed }
+// Parameters are variables that are used in the function definition
+// return keyword is used to return a value from a function
+
+// Defining a function requires the function keyword
+// This function takes two parameters and returns the sum of the two parameters
+function sum(a, b) {
+  return a + b;
+}
+
+var result = sum(5, 10);
+console.log("Sum: ", result);
+
+// Most things in Javascript are or become objects with functions and variables
