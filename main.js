@@ -137,4 +137,82 @@ console.log(firstname.indexOf("o")); // 1
 // 4. charAt - returns the character at a specific index
 console.log(firstname.charAt(1)); // o
 
+// Arrays - zero indexed list of items
 
+// Creating Arrays
+var cars = ["BMW", "Audi", "Mercedes"];
+console.log("Cars: ", cars);
+
+// Array(3) - creates an array with 3 empty slots
+var fruit = new Array(3);
+console.log("Fruit: ", fruit);
+
+// Array(3, 6, 8) - creates an array with provided values
+var fruit = new Array(3, 6, 8);
+console.log("Fruit: ", fruit);
+
+// Accessing Array Elements
+console.log("First Element: ", cars[0]); // BMW
+
+// Assigning a new value to an element in an array
+cars[0] = "Toyota"; // Reassigning the value
+console.log("Cars: ", cars);
+
+// Array Methods (functions) & properties (variables)
+// 1. length - returns the length property of an array
+console.log("Length: ", cars.length);
+
+// 2. push - adds an element to the end of an array
+cars.push("Tesla");
+console.log("Cars: ", cars);
+
+// 3. unshift - adds an element to the beginning of an array
+cars.unshift("Honda");
+console.log("Cars: ", cars);
+
+// 4. pop - removes the last element from an array
+cars.pop();
+
+// 5. shift - removes the first element from an array
+cars.shift();
+console.log("Cars: ", cars);
+
+// 6a. splice - adds or removes elements from an array
+// splice(startIndex, deleteCount, item1, item2, ...)
+// Starting at index 1, remove 0 elements and add Ford and Chevy
+cars.splice(1, 0, "Ford", "Chevy");
+console.log("Cars: ", cars);
+
+// 6b. splice - removes elements from an array
+// Starting at index 1 (inclusive), remove 2 elements
+cars.splice(1, 2);
+console.log("Cars: ", cars);
+
+// 7. sort - sorts the elements in alphabetical or numerical order
+cars.sort();
+console.log("Cars: ", cars);
+
+// 8. slice - returns a copy of a portion of an array
+// slice(startIndex, endIndex) - endIndex is exclusive
+var newCars = cars.slice(1, 3);
+console.log("New Cars: ", newCars);
+
+// reverse - reverses the order of elements in an array
+cars.reverse();
+console.log("Reversed Cars: ", cars);
+
+var numbers = [4, 9, 16, 25];
+// 9. map - creates a new array with the results of calling a function for every array element
+var squaredNumbers = numbers.map(Math.sqrt);
+console.log("Squared Numbers: ", squaredNumbers);
+
+// 2D Arrays - arrays within an array
+
+var matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+];
+
+console.log("Matrix: ", matrix);
+// Accessing elements in a 2D array
+console.log("Element: ", matrix[0][1]); // 2
