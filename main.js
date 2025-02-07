@@ -94,3 +94,14 @@ console.log("< : ", c < e); // true
 console.log(">= : ", c >= e); // false
 console.log("<= : ", c <= e); // true
 console.log("!= : ", c != e); // true
+
+// Logical Operators - &&, ||, !
+// && - and operator
+// || - or operator
+// ! - negation operator
+
+console.log("&&: ", c == d && c < e); // true
+
+// When using || operator, if the first condition is true, the second condition is not checked
+console.log("||: ", c == d || c > e); // true
+console.log("||: ", c > e || c == d); // true
