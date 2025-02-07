@@ -105,3 +105,36 @@ console.log("&&: ", c == d && c < e); // true
 // When using || operator, if the first condition is true, the second condition is not checked
 console.log("||: ", c == d || c > e); // true
 console.log("||: ", c > e || c == d); // true
+
+// String Manipulation
+var firstname = "John";
+var lastname = "Doe";
+
+// string concatenation - joining two or more strings
+var fullname = firstname + " " + lastname;
+console.log("Full Name: ", fullname);
+
+// using concat method
+var fullname = firstname.concat(" ", lastname);
+console.log("Full Name Concat Function: ", fullname);
+
+// using backticks or template literals
+var fullname = `${firstname} ${lastname}`;
+console.log("Full Name Template Literal: ", fullname);
+
+// String Methods (functions) & properties (variables)
+// 1. length - returns the length property of a string
+// strings are zero indexed like arrays
+console.log(firstname.length);
+
+// 2. toUpperCase - converts a string to uppercase
+// Need to use parenthesis to call a function
+console.log(firstname.toUpperCase());
+
+// 3. indexOf - returns the index of a character in a string
+console.log(firstname.indexOf("o")); // 1
+
+// 4. charAt - returns the character at a specific index
+console.log(firstname.charAt(1)); // o
+
+
