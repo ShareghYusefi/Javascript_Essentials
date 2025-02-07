@@ -69,11 +69,28 @@ console.log("Decrement: ", y--); // 15
 console.log("Decrement: ", --y); // 13
 
 // Compound Assignment Operators - +=, -=, *=, /=, %=
-var a = 5;
+var a = 5; // a = 5
 var b = 10;
 
-console.log("+=: ", (a += b)); // a = a + b => 15
-console.log("-=: ", (a -= b)); // a = a - b => 5
+console.log("+=: ", (a += b)); // a = a + b => a = 15
+console.log("-=: ", (a -= b)); // a = a - b => a = 5
+
 console.log("*=: ", (a *= b)); // a = a * b => 50
 console.log("/=: ", (a /= b)); // a = a / b => 5
 console.log("%=: ", (a %= b)); // a = a % b => 5
+
+// Comparison Operators (result in boolean) - ==, ===, !=, !==, >, <, >=, <=
+// ! - not operator so != -> not equal to
+// == - checks only the value
+// === - checks the value and the data type
+var c = 10;
+var d = "10";
+var e = 20;
+
+console.log("==: ", c == d); // true
+console.log("===: ", c === d); // false : d is a string
+console.log("> : ", c > e); // false
+console.log("< : ", c < e); // true
+console.log(">= : ", c >= e); // false
+console.log("<= : ", c <= e); // true
+console.log("!= : ", c != e); // true
