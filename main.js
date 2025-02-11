@@ -241,3 +241,86 @@ var result2 = sum(price3, price4);
 console.log("Sum2: ", result2);
 
 // Most things in Javascript are or become objects with functions and variables
+
+// Conditional Statements
+// if, else if, else
+// Syntax: if (condition) { code to be executed }
+// if is a function that takes a condition as an argument, and if the condition is true, it executes the code block inside the curly braces.
+
+var age = 19;
+if (age >= 21) {
+  console.log("You can vote");
+} else if (age >= 18) {
+  console.log("You can drive");
+} else {
+  console.log("You are a minor");
+}
+
+// Switch Statement
+// Syntax: switch(expression) { case value: code to be executed; break; default: code to be executed if no case matches; }
+// switch is a function that takes an expression as an argument, and based on the value of the expression, it executes the code block inside the matching case.
+
+// Define a variable to use in the switch statement
+// expression means the value that you want to compare
+var day = "Thursday";
+
+switch (day) {
+  // Check if day is equal to Monday
+  case "Monday":
+    console.log("Today is Monday");
+    break; // Break statement is used to exit the switch statement
+
+  // We wont reach this case because we have a mathcing case above that includes breaking out of the switch statement
+  case "Tuesday":
+    console.log("Today is Tuesday");
+    break;
+
+  case "Wednesday":
+    console.log("Today is Wednesday");
+    break;
+  // default is used when no case matches the expression
+  default:
+    console.log("Today is not a weekday");
+}
+
+// Loops
+// For Loop, While Loop, Do While Loop
+
+// For Loop
+// Syntax: for (initialization; condition; increment/decrement) { code to be executed }
+// for is a function that takes three arguments: initialization, condition, and increment/decrement. It executes the code block inside the curly braces until the condition is false.
+// initialization: A statement that is executed once before the execution of the code block.
+// condition: An expression that is evaluated before each iteration. If the condition is true, the loop continues. If the condition is false, the loop stops.
+// increment/decrement: A statement that is executed after each iteration.
+for (let i = 0; i < 3; i++) {
+  console.log("i is: ", i);
+}
+
+// While Loop
+// Syntax: while (condition) { code to be executed }
+var j = 0;
+while (j <= 3) {
+  console.log("j is: ", j);
+  j++; // Increment j by 1
+}
+
+// Do While Loop
+// Syntax: do { code to be executed } while (condition)
+// Executes the code block once before checking the condition
+var k = 0;
+do {
+  console.log("k is: ", k);
+  k++;
+} while (k <= 3);
+
+// We can use the for loop to also iterate over arrays
+// Syntax: for (variable of array) { code to be executed }
+var fruits = ["Apple", "Banana", "Cherry"];
+for (var fruit of fruits) {
+  console.log("Fruit: ", fruit);
+}
+
+// using index of array
+for (let i = 0; i < fruits.length; i++) {
+  console.log("Fruit: ", fruits[i]);
+}
