@@ -224,11 +224,20 @@ console.log("Element: ", matrix[0][1]); // 2
 
 // Defining a function requires the function keyword
 // This function takes two parameters and returns the sum of the two parameters
+// parameters: A placeholder inside a function definition. It acts as a variable name for the value that is passed to the function when it is called.
 function sum(a, b) {
   return a + b;
 }
 
-var result = sum(5, 10);
+var price1 = 5;
+var price2 = 10;
+var price3 = 15;
+var price4 = 20;
+
+// Arguments: The actual value/variable that you pass to a function. This value replaces the parameter during usage/function call.
+var result = sum(price1, price2);
 console.log("Sum: ", result);
+var result2 = sum(price3, price4);
+console.log("Sum2: ", result2);
 
 // Most things in Javascript are or become objects with functions and variables
